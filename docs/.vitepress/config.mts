@@ -82,5 +82,6 @@ export default defineConfig({
       next: '下一篇'
     }
   },
-  lastUpdated: true
+  lastUpdated: true,
+  base: /ruler/
 })
