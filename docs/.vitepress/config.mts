@@ -83,5 +83,5 @@ export default defineConfig({
     }
   },
   lastUpdated: true,
-  base: /ruler/
+  base: '/ruler/'
 })
