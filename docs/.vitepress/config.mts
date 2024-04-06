@@ -80,8 +80,12 @@ export default defineConfig({
     docFooter: {
       prev: '上一篇',
       next: '下一篇'
-    }
+    },
+    editLink: {
+      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页面'
+    },
+    base: '/ruler/'
   },
-  lastUpdated: true,
-  base: '/ruler/'
+  lastUpdated: true
 })
