@@ -74,8 +74,8 @@ export default defineConfig({
         text: '规则引擎',
         collapsed: false,
         items: [
-          { text: '完全规则引擎 CompleteRulesEngine', link: '/rulesengine/complete-rules-engine' },
-          { text: '不完全规则引擎 IncompleteRulesEngine', link: '/rulesengine/incomplete-rules-engine' }
+          { text: '不可终止规则引擎 NoTerminableRulesEngine', link: '/rulesengine/no-terminable-rules-engine' },
+          { text: '可终止规则引擎 TerminableRulesEngine', link: '/rulesengine/terminable-rules-engine' }
         ]
       },
       {

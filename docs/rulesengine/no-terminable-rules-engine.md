@@ -1,9 +1,9 @@
-# 完全规则引擎 CompleteRulesEngine
+# 不可终止规则引擎 NoTerminableRulesEngine
 
-CompleteRulesEngine是AbstractRulesEngine的子类，该引擎类型会完全执行完所有规则，并返回详细结果。
+NoTerminableRulesEngine是AbstractRulesEngine的子类，该引擎类型会完全执行完所有规则，并返回详细结果。
 
 ```java
-public class CompleteRulesEngine extends AbstractRulesEngine {
+public class NoTerminableRulesEngine extends AbstractRulesEngine {
     @Override
     public Result execute(Object rootObject) {
         try {

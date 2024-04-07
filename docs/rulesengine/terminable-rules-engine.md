@@ -1,9 +1,9 @@
-# 不完全规则引擎 IncompleteRulesEngine
+# 可终止规则引擎 TerminableRulesEngine
 
-IncompleteRulesEngine是AbstractRulesEngine的子类，该引擎类型在运行规则时，一旦发现违规，就会直接返回当前的执行结果。
+TerminableRulesEngine是AbstractRulesEngine的子类，该引擎类型在运行规则时，一旦发现违规，就会直接返回当前的执行结果。
 
 ```java
-public class IncompleteRulesEngine extends AbstractRulesEngine {
+public class TerminableRulesEngine extends AbstractRulesEngine {
     @Override
     public Result execute(Object rootObject) {
         try {
@@ -12,7 +12,10 @@ public class IncompleteRulesEngine extends AbstractRulesEngine {
             for (AbstractRule rule : rules) {
                 try {
                     if (this.executeInternal(rootObject, rule, result)) { // [!code focus]
-                        return result;
+                        Grade ruleGrade = rule.getRuleDefinition().getGrade();
+                        if (terminationGrade.ordinal() <= ruleGrade.ordinal()) { // [!code focus]
+                            return result;
+                        }
                     }
                 } catch (Exception e) {
                     String message = this.getExceptionMessage(rule, e);
