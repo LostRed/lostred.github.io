@@ -1,6 +1,6 @@
 # 可终止规则引擎 TerminableRulesEngine
 
-TerminableRulesEngine是AbstractRulesEngine的子类，该引擎类型在运行规则时，一旦发现违规，就会直接返回当前的执行结果。
+TerminableRulesEngine是AbstractRulesEngine的子类，该引擎类型在运行规则时，一旦发现超过或与终止等级规则相等的违规，就会直接返回当前的执行结果。
 
 ```java
 public class TerminableRulesEngine extends AbstractRulesEngine {
