@@ -6,7 +6,7 @@
 
 采用声明式开发，使用注解直接配置表达式
 
-```java:line-numbers {1}
+```java:line-numbers
 @Rule(ruleCode = "身份证号码长度",
         businessType = "person",
         description = "身份证号码长度必须为18位",
@@ -24,7 +24,7 @@ public class CertNoLengthRule extends DeclarativeRule {
 
 采用编程式开发，重写ProgrammaticRule的方法
 
-```java:line-numbers {1}
+```java:line-numbers
 @Rule(ruleCode = "联系方式",
         businessType = "person",
         description = "联系方式密码不能为1234")

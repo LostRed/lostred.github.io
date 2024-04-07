@@ -4,7 +4,7 @@ Ruler Project提供了Spring Boot开发场景下的Starter启动器，可直接�
 
 ## 引入依赖
 
-```xml:line-numbers {1}
+```xml:line-numbers
 <dependency>
     <groupId>info.lostred.ruler</groupId>
     <artifactId>ruler-spring-boot-starter</artifactId>
@@ -16,7 +16,7 @@ Ruler Project提供了Spring Boot开发场景下的Starter启动器，可直接�
 
 框架默认只会根据application.yaml配置单实例规则引擎，项目中需要使用到多类规则引擎时，需要自己配置规则引擎bean。
 
-```yaml:line-numbers {1}
+```yaml:line-numbers
 ruler:
   #业务类型
   business-type: person
@@ -32,7 +32,7 @@ ruler:
 
 使用注解初始化方式必须配置Configuration，单实例规则引擎不能满足项目时，可自定义规则引擎。
 
-```java:line-numbers {1}
+```java:line-numbers
 @Configuration
 @RuleScan("info.lostred.ruler.test.rule")
 @DomainScan("info.lostred.ruler.test.domain")
@@ -47,7 +47,7 @@ public class RulerConfig {
 
 以上，info.lostred.ruler.test.domain为需要校验类的包名路径，下面是需要校验类的示例代码。
 
-```java:line-numbers {1}
+```java:line-numbers
 @Data
 public class Person {
     private String certNo;
@@ -83,7 +83,7 @@ public class Contact {
 
 以下是单元测试案例。
 
-```java:line-numbers {1}
+```java:line-numbers
 @SpringBootTest
 class RulesEngineTest {
     static String businessType = "person";

@@ -1,52 +1,52 @@
 {
-  "hash": "4f2ac8e8",
-  "configHash": "0fc716f1",
-  "lockfileHash": "e3b0c442",
-  "browserHash": "b940f904",
+  "hash": "17205bd8",
+  "configHash": "f49877b3",
+  "lockfileHash": "67d4c2cc",
+  "browserHash": "f584f746",
   "optimized": {
     "vue": {
-      "src": "../../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7d75e569",
+      "fileHash": "a990c69b",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../../../node_modules/@vue/devtools-api/dist/index.js",
+      "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "41ca20ab",
+      "fileHash": "e3d72dda",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
-      "src": "../../../../../node_modules/@vueuse/core/index.mjs",
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "4419610a",
+      "fileHash": "ebceeb90",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
-      "src": "../../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "eae0f3cc",
+      "fileHash": "3d377b07",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
-      "src": "../../../../../node_modules/mark.js/src/vanilla.js",
+      "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "ea8a0bb8",
+      "fileHash": "793d3952",
       "needsInterop": false
     },
     "vitepress > minisearch": {
-      "src": "../../../../../node_modules/minisearch/dist/es/index.js",
+      "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "845fb65a",
+      "fileHash": "2e99b104",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-3A6HBKMO": {
-      "file": "chunk-3A6HBKMO.js"
+    "chunk-4I4JYJZN": {
+      "file": "chunk-4I4JYJZN.js"
     },
-    "chunk-IHCFIHWR": {
-      "file": "chunk-IHCFIHWR.js"
+    "chunk-CKQ4TNQ3": {
+      "file": "chunk-CKQ4TNQ3.js"
     }
   }
 }

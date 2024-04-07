@@ -15,7 +15,7 @@
 
 在配置类上标记该注解，规则工厂会扫描其value指定的包路径。当使用spring时，需将该配置类注册到spring容器。
 
-```java:line-numbers {1}
+```java:line-numbers
 @Configuration
 @RuleScan("info.lostred.ruler.test.rule")
 @DomainScan("info.lostred.ruler.test.domain")

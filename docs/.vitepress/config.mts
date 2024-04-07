@@ -58,6 +58,33 @@ export default defineConfig({
           { text: '规则开发', link: '/guide/rule-developing' },
           { text: '其它开发注解', link: '/guide/other-annotation' }
         ]
+      },
+      {
+        text: '规则',
+        collapsed: false,
+        items: [
+          { text: '规则定义 RuleDefinition', link: '/rule/rule-definition' },
+          { text: '抽象规则 AbstractRule', link: '/rule/abstract-rule' },
+          { text: '声明式规则 DeclarativeRule', link: '/rule/declarative-rule' },
+          { text: '编程式规则 ProgrammaticRule', link: '/rule/programmatic-rule' },
+          { text: '简单规则 SimpleRule', link: '/rule/simple-rule' }
+        ]
+      },
+      {
+        text: '规则引擎',
+        collapsed: false,
+        items: [
+          { text: '完全规则引擎 CompleteRulesEngine', link: '/rulesengine/complete-rules-engine' },
+          { text: '不完全规则引擎 IncompleteRulesEngine', link: '/rulesengine/incomplete-rules-engine' }
+        ]
+      },
+      {
+        text: '规则工厂',
+        collapsed: false,
+        items: [
+          { text: '规则工厂 RuleFactory', link: '/rulefactory/rule-factory' },
+          { text: '使用spEL动态创建规则', link: '/rulefactory/create-rule' },
+        ]
       }
     ],
     darkModeSwitchLabel: '主题',
