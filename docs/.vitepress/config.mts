@@ -92,8 +92,8 @@ export default defineConfig({
         items: [
           { text: 'SpEL简介', link: '/spel/sp-el-intro' },
           { text: 'SpEL基础语法', link: '/spel/sp-el-base-grammar' },
-          { text: 'SpEL类型相关语法', link: '/spel/sp-el-base-grammar' },
-          { text: 'SpEL集合相关语法', link: '/spel/sp-el-base-grammar' },
+          { text: 'SpEL类型相关语法', link: '/spel/sp-el-class-grammar' },
+          { text: 'SpEL集合相关语法', link: '/spel/sp-el-collection-grammar' },
         ]
       }
     ],
