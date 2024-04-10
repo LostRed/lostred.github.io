@@ -32,7 +32,7 @@ Ruler是一套通用的规则引擎框架，最新版本基于spEL，支持程�
 - no_terminable类型的实现类会输出报告，并且会执行完所有的规则
 
 ::: danger 注意
-3.x版本移除了原本的simple类型的实现类
+3.x版本移除了原本的simple类型的实现类  
 3.3.x版本incomplete类型更名为terminable类型，complete类型更名为no_terminable类型
 :::
 
