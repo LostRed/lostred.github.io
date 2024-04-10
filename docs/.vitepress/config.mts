@@ -85,6 +85,16 @@ export default defineConfig({
           { text: '规则工厂 RuleFactory', link: '/rulefactory/rule-factory' },
           { text: '使用spEL动态创建规则', link: '/rulefactory/create-rule' },
         ]
+      },
+      {
+        text: 'SpEL',
+        collapsed: false,
+        items: [
+          { text: 'SpEL简介', link: '/spel/sp-el-intro' },
+          { text: 'SpEL基础语法', link: '/spel/sp-el-base-grammar' },
+          { text: 'SpEL类型相关语法', link: '/spel/sp-el-base-grammar' },
+          { text: 'SpEL集合相关语法', link: '/spel/sp-el-base-grammar' },
+        ]
       }
     ],
     darkModeSwitchLabel: '主题',
