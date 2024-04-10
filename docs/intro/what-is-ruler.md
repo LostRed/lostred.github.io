@@ -28,11 +28,12 @@ Ruler是一套通用的规则引擎框架，最新版本基于spEL，支持程�
 
 ### 规则引擎接口 RulesEngine
 
-- incomplete类型的实现类会输出报告，有违规也会直接返回结果
-- complete类型的实现类会输出报告，并且会执行完所有的规则
+- terminable类型的实现类会输出报告，当违反指定等级以上的规则时，会停止执行，返回结果
+- no_terminable类型的实现类会输出报告，并且会执行完所有的规则
 
 ::: danger 注意
 3.x版本移除了原本的simple类型的实现类
+3.3.x版本incomplete类型更名为terminable类型，complete类型更名为no_terminable类型
 :::
 
 ### 抽象规则 AbstractRule
