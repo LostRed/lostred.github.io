@@ -83,7 +83,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '规则工厂 RuleFactory', link: '/rulefactory/rule-factory' },
-          { text: '使用spEL动态创建规则', link: '/rulefactory/create-rule' },
+          { text: '使用spEL动态创建规则', link: '/rulefactory/create-rule' }
         ]
       },
       {
@@ -93,7 +93,7 @@ export default defineConfig({
           { text: 'SpEL简介', link: '/spel/sp-el-intro' },
           { text: 'SpEL基础语法', link: '/spel/sp-el-base-grammar' },
           { text: 'SpEL类型相关语法', link: '/spel/sp-el-class-grammar' },
-          { text: 'SpEL集合相关语法', link: '/spel/sp-el-collection-grammar' },
+          { text: 'SpEL集合相关语法', link: '/spel/sp-el-collection-grammar' }
         ]
       }
     ],
