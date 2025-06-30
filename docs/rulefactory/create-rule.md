@@ -1,4 +1,4 @@
-# 使用spEL动态创建规则
+# 使用SpEL动态创建规则
 
 以下案例通过前端页面表单传入规则定义RuleDefinition，组装规则后在规则工厂RuleFactory中注册规则定义，最后加入对应的规则引擎RulesEngine，即可让规则在规则引擎中生效。
 
@@ -31,5 +31,5 @@ public class TestController {
 ```
 
 :::warning 注意
-通过spEL定义的规则都需要在规则定义中声明ruleClass为DeclarativeRule。
+通过SpEL定义的规则都需要在规则定义中声明ruleClass为DeclarativeRule。
 :::
