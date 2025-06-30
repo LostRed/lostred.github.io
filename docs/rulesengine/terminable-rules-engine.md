@@ -5,40 +5,24 @@ TerminableRulesEngine是AbstractRulesEngine的子类，该引擎类型在运行�
 ```java
 public class TerminableRulesEngine extends AbstractRulesEngine {
     @Override
-    public Result execute(Object rootObject) {
-        try {
-            this.initContext(rootObject);
-            Result result = Result.newInstance();
-            for (AbstractRule rule : rules) {
-                try {
-                    if (this.executeInternal(rootObject, rule, result)) { // [!code focus]
-                        Grade ruleGrade = rule.getRuleDefinition().getGrade();
-                        if (terminationGrade.ordinal() <= ruleGrade.ordinal()) { // [!code focus]
-                            return result;
-                        }
-                    }
-                } catch (Exception e) {
-                    String message = this.getExceptionMessage(rule, e);
-                    throw new RulesEnginesException(message, e, this.getBusinessType(), this.getClass());
-                }
-            }
-            return result;
-        } finally {
-            this.destroyContext();
-        }
-    }
-
-    @Override
-    public Result executeWithRules(Object rootObject, Set<String> ruleCodes) {
+    public Result executeWithRules(Object rootObject, List<String> ruleCodes) {
         try {
             this.initContext(rootObject);
             Result result = Result.newInstance();
             RuleFactory ruleFactory = this.getRuleFactory();
-            for (String ruleCode : ruleCodes) {
+            for (String ruleCode : ruleCodes) { // [!code focus]
                 AbstractRule rule = ruleFactory.getRule(ruleCode);
+                if (rule == null) {
+                    Logger logger = Logger.getLogger(this.getClass().getName());
+                    logger.warning("rule[" + ruleCode + "] not found in ruleFactory");
+                    continue;
+                }
                 try {
                     if (this.executeInternal(rootObject, rule, result)) {
-                        return result;
+                        Grade ruleGrade = rule.getRuleDefinition().getGrade();
+                        if (terminationGrade.ordinal() <= ruleGrade.ordinal()) { // [!code focus]
+                            return result;
+                        }
                     }
                 } catch (Exception e) {
                     String message = this.getExceptionMessage(rule, e);
