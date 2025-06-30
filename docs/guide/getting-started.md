@@ -12,6 +12,18 @@ Ruler Project提供了Spring Boot开发场景下的Starter启动器，可直接�
 </dependency>
 ```
 
+::: warning 注意
+3.4.0之后的版本命名空间groupId已迁移至io.github.lostred下。
+:::
+
+```xml:line-numbers
+<dependency>
+    <groupId>io.github.lostred</groupId>
+    <artifactId>ruler-spring-boot-starter</artifactId>
+    <version>{ruler.version}</version>
+</dependency>
+```
+
 ## 配置application.yaml
 
 框架默认只会根据application.yaml配置单实例规则引擎，项目中需要使用到多类规则引擎时，需要自己配置规则引擎bean。
